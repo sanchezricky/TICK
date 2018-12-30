@@ -9,3 +9,6 @@ echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stabl
 
 # Update APT
 sudo apt-get update
+
+# Influxdb install
+sudo apt-get install influxdb
