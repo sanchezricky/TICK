@@ -2,6 +2,9 @@
 
 set -euox pipefail
 
+# SMTP server install
+sudo apt-get install sendmail
+
 # Adding TICK stack repo
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
@@ -17,3 +20,5 @@ sudo apt-get install influxdb
 
 # Starting influxdb
 sudo systemctl start influxdb
+
+
