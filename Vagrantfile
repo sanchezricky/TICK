@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
 
     test.vm.box = "ubuntu/xenial64"
     test.vm.network :private_network, ip: "192.168.56.20" 
+    test.vm.provision :shell, path: "setup.sh"
     test.vm.provision :shell, path: "tick.sh"
  
     test.vm.provider :virtualbox do |v|
