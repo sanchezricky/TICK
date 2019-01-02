@@ -3,7 +3,8 @@
 set -euox pipefail
 
 # SMTP server install
-sudo apt-get install sendmail
+sudo apt-get update -y
+sudo apt-get install sendmail -y
 
 # Adding TICK stack repo
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
