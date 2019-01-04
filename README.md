@@ -1,4 +1,4 @@
-# TICK stack
+# TICK stack - A scalable integrated open-source system for processing time-series data.
 
 * **T**elegraf - collects time-series data from a variety of sources
 * **I**nfluxDB - stores time-series data
